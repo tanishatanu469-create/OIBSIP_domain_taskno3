@@ -35,21 +35,12 @@ This project demonstrates the use of **HTML for structure, CSS for styling, and 
 * Celsius → Kelvin
   ( K = C + 273.15 )
 
-## Project Structure
-
-```
-temperature-converter/
-│
-└── index.html
-```
-
-All HTML, CSS, and JavaScript code are included in a **single file** for simplicity.
 
 ## How to Run the Project
 
 1. Download or clone the repository.
 2. Open the project folder.
-3. Double-click **index.html** or open it in any web browser.
+3. Open it in any web browser.
 4. Enter a temperature value, choose the unit, and click **Convert**.
 
 ## Example
