@@ -1,72 +1,112 @@
-## Temperature Converter Web App
+# Temperature Calculator Web App
 
 ## Overview
 
-The **Temperature Converter** is a simple and interactive web application that allows users to convert temperatures between **Celsius (°C), Fahrenheit (°F), and Kelvin (K)**.
-The user enters a temperature value, selects the unit, and clicks the **Convert** button to see the converted results instantly.
+This project is a simple **Temperature Converter Web Application** built using **HTML, CSS, and JavaScript**. The application allows users to enter a temperature value and convert it between **Celsius and Fahrenheit** using an interactive user interface.
 
-This project demonstrates the use of **HTML for structure, CSS for styling, and JavaScript for functionality and input validation**.
-
-## Features
-
-* Enter temperature value in an input field
-* Select temperature unit (Celsius, Fahrenheit, Kelvin)
-* Convert temperature using a single button
-* Displays converted values instantly
-* Input validation to prevent non-numeric entries
-* Modern **gradient UI and glassmorphism design**
-* Smooth hover animations for better user experience
-* Responsive layout suitable for desktop and mobile screens
-
-## Technologies Used
-
-* **HTML5** – Structure of the application
-* **CSS3** – Styling, gradient background, and animations
-* **JavaScript** – Temperature conversion logic and validation
-
-## Temperature Conversion Formulas
-
-* Celsius → Fahrenheit
-  ( F = (C \times 9/5) + 32 )
-
-* Fahrenheit → Celsius
-  ( C = (F - 32) \times 5/9 )
-
-* Celsius → Kelvin
-  ( K = C + 273.15 )
-
-
-## How to Run the Project
-
-1. Download or clone the repository.
-2. Open the project folder.
-3. Open it in any web browser.
-4. Enter a temperature value, choose the unit, and click **Convert**.
-
-## Example
-
-Input: **72°F**
-
-Output:
-**22.22°C | 295.37K**
-
-## Learning Purpose
-
-This project is suitable for **beginner web developers** to practice:
-
-* DOM manipulation
-* JavaScript functions
-* User input validation
-* CSS styling and animations
-
-## Future Improvements
-
-* Add real-time conversion without clicking the button
-* Include a **dark/light mode toggle**
-* Add temperature icons and animations
-* Improve UI with advanced CSS effects
-* Convert between all units automatically
+The design uses a modern dark theme with rounded elements and hover effects to make the interface visually appealing and easy to use.
 
 ---
 
-This project is a beginner-friendly web development project to practice **front-end fundamentals and JavaScript logic**.
+## Features
+
+* Convert **Celsius to Fahrenheit**
+* Convert **Fahrenheit to Celsius**
+* Clean and modern **dark UI design**
+* **Input validation** for empty values
+* Instant result display
+* Responsive and centered layout
+
+---
+
+## Technologies Used
+
+* **HTML** – Structure of the application
+* **CSS** – Styling and layout design
+* **JavaScript** – Temperature conversion logic
+
+---
+
+## Project Structure
+
+```
+temperature-calculator/
+│
+├── index.html    # Main application file
+└── README.md     # Project documentation
+```
+
+---
+
+## How the Application Works
+
+### 1. User Input
+
+The user enters a temperature value in the input field.
+
+### 2. Unit Selection
+
+A dropdown menu allows the user to choose:
+
+* **Celsius → Fahrenheit**
+* **Fahrenheit → Celsius**
+
+### 3. Conversion
+
+When the **Calculate** button is clicked, JavaScript reads the input value and selected option.
+
+### 4. Result Display
+
+The converted temperature is displayed below the button with the correct unit.
+
+---
+
+## Temperature Conversion Formulas
+
+### Celsius to Fahrenheit
+
+[
+F = (C \times \frac{9}{5}) + 32
+]
+
+### Fahrenheit to Celsius
+
+[
+C = (F - 32) \times \frac{5}{9}
+]
+
+---
+
+## How to Run the Project
+
+1. Download or copy the code.
+2. Save the file as **index.html**.
+3. Open the file in any web browser (Chrome, Edge, Firefox).
+4. Enter a temperature value and click **Calculate**.
+
+---
+
+## Example
+
+Input:
+
+```
+Temperature: 25
+Conversion: Celsius → Fahrenheit
+```
+
+Output:
+
+```
+77°F
+```
+
+---
+
+## Possible Improvements
+
+* Add **live conversion without button**
+* Improve **mobile responsiveness**
+* Add **temperature icons or animations**
+
+---
