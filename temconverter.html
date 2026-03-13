@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tanisha | AI Temp Tool</title>
+    <style>
+        :root { --primary: #2dd4bf; --bg: #050a14; }
+        body { background: var(--bg); color: white; font-family: 'Poppins', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+
+        .app-container { background: #111b2d; padding: 40px; border-radius: 40px; border: 2px solid #1e293b; width: 380px; text-align: center; }
+        h1 { font-size: 20px; color: var(--primary); margin-bottom: 30px; }
+
+        input { background: #0a111e; border: 2px solid #233554; padding: 20px; color: white; width: 80%; border-radius: 20px; font-size: 18px; text-align: center; }
+        
+        .toggle-group { margin: 25px 0; display: flex; justify-content: center; gap: 10px; }
+        .unit-select { background: #1e293b; border: 1px solid var(--primary); color: white; padding: 10px; border-radius: 10px; }
+
+        .convert-btn { background: transparent; border: 2px solid var(--primary); color: var(--primary); padding: 15px 40px; border-radius: 50px; cursor: pointer; font-weight: bold; transition: 0.4s; }
+        .convert-btn:hover { background: var(--primary); color: #000; }
+
+        #display { margin-top: 30px; font-size: 35px; font-weight: 300; color: #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="app-container">
+    <h1>TEMPERATURE<br>CALCULATOR</h1>
+    <input type="number" id="tempInput" placeholder="0">
+    
+    <div class="toggle-group">
+        <select id="choice" class="unit-select">
+            <option value="cToF">Celsius → Fahrenheit</option>
+            <option value="fToC">Fahrenheit → Celsius</option>
+        </select>
+    </div>
+
+    <button class="convert-btn" onclick="calculate()">Calculate</button>
+
+    <div id="display">Result</div>
+</div>
+
+<script>
+    function calculate() {
+        let input = document.getElementById('tempInput').value;
+        let mode = document.getElementById('choice').value;
+        let output = document.getElementById('display');
+
+        if(input === "") {
+            output.innerText = "Value?";
+            return;
+        }
+
+        if(mode === "cToF") {
+            let f = (input * 9/5) + 32;
+            output.innerText = f.toFixed(1) + "°F";
+        } else {
+            let c = (input - 32) * 5/9;
+            output.innerText = c.toFixed(1) + "°C";
+        }
+    }
+</script>
+</body>
+</html>
